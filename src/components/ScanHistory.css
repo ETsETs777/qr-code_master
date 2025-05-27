@@ -1,108 +1,95 @@
 .scan-history-container {
-    padding: 2rem;
-    max-width: 1200px;
+    padding: 24px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .scan-history-title {
-    font-size: 1.5rem;
-    color: #1e293b;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    text-align: center;
+    font-size: 24px;
+    color: #f1f1f1;
+    margin-bottom: 24px;
 }
 
 .scan-history-empty {
     text-align: center;
-    color: #64748b;
-    font-size: 1.1rem;
-    padding: 2rem;
+    color: #aaa;
+    font-size: 16px;
+    padding: 48px 0;
 }
 
 .scan-history-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
 }
 
 .scan-history-card {
-    background: rgba(255, 255, 255, 0.142);
+    background: #1f1f1f;
     border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #e2e8f0;
+    padding: 16px;
+    transition: transform 0.2s;
 }
 
 .scan-history-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    border-color: #c7d2fe;
 }
 
 .scan-qr-wrapper {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
     background: white;
+    padding: 16px;
     border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    margin-bottom: 16px;
 }
 
 .scan-content {
     width: 100%;
-    text-align: center;
 }
 
 .scan-text {
-    color: #334155;
-    font-size: 0.9rem;
+    color: #f1f1f1;
+    font-size: 14px;
     word-break: break-all;
-    margin-bottom: 1rem;
-    line-height: 1.4;
-    background: #f8fafc;
-    padding: 0.75rem;
-    border-radius: 6px;
+    margin-bottom: 16px;
+    background: #121212;
+    padding: 12px;
+    border-radius: 4px;
 }
 
 .scan-actions {
     display: flex;
-    gap: 0.5rem;
-    justify-content: center;
+    gap: 8px;
 }
 
 .scan-copy-btn {
-    background-color: #4f46e5;
-    color: white;
+    background: #3ea6ff;
+    color: #0f0f0f;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.2s ease;
+    font-size: 14px;
     flex: 1;
+    transition: background 0.2s;
 }
 
 .scan-copy-btn:hover {
-    background-color: #4338ca;
+    background: #65b8ff;
 }
 
 .scan-open-btn {
-    background-color: #e0e7ff;
-    color: #4f46e5;
+    background: #272727;
+    color: #f1f1f1;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-    text-decoration: none;
+    font-size: 14px;
     flex: 1;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
 }
 
 .scan-open-btn:hover {
-    background-color: #c7d2fe;
-    color: #4338ca;
+    background: #3f3f3f;
 }

@@ -1,78 +1,46 @@
 .container {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding: 16px;
-    background: #f8fafc00;
-    border-radius: 12px;
-    margin: 20px;
-    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    top: 64px;
+    width: 240px;
+    height: calc(100vh - 64px);
+    background: #0f0f0f;
+    padding: 12px 0;
+    overflow-y: auto;
 }
 
 .navButton {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    background: white;
-    color: #334155;
+    gap: 24px;
+    padding: 12px 24px;
+    color: #f1f1f1;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 500;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e2e8f0;
-    transition: all 0.3s ease;
-    font-size: 15px;
+    transition: background 0.2s;
+    width: 100%;
+    border: none;
+    background: transparent;
 }
 
 .navButton:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-color: #c7d2fe;
-    background: #f1f5f9;
-}
-
-.navButton:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.navButton:nth-child(1) {
-    background: #e0f2fe;
-    border-color: #bae6fd;
-    color: #0369a1;
-}
-
-.navButton:nth-child(2) {
-    background: #ecfdf5;
-    border-color: #d1fae5;
-    color: #047857;
-}
-
-.navButton:nth-child(3) {
-    background: #fef2f2;
-    border-color: #fee2e2;
-    color: #b91c1c;
-}
-
-.navButton:nth-child(4) {
-    background: #f5f3ff;
-    border-color: #ede9fe;
-    color: #6d28d9;
+    background: #272727;
 }
 
 .buttonIcon {
-    font-size: 18px;
+    font-size: 20px;
+    width: 24px;
 }
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
+        width: 72px;
     }
     
     .navButton {
-        justify-content: center;
-        padding: 14px;
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px 0;
+        font-size: 12px;
+        text-align: center;
     }
 }

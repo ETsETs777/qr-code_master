@@ -20,6 +20,10 @@ export const Navigation = () => {
                 <span className={s.buttonIcon}>📋</span>
                 История сканирования
             </Link>
+            <Link to="/qr-code/videos" className={s.navButton}>
+                <span className={s.buttonIcon}>🎥</span>
+                Видео
+            </Link>
         </nav>
     );
 };

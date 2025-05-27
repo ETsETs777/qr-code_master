@@ -4,6 +4,7 @@ import { QrCodeGenerator } from './components/Generate/QrCodeGenerator';
 import { QrCodeScanner } from './components/Scan/QrCodeScanner';
 import { GenerateHistory } from './components/GenerateHistory';
 import { ScanHistory } from './components/ScanHistory';
+import { VideoPlayer } from './components/Videos/VideoPlayer';
 import { Header } from './components/on/Apostrophes';
 import { Footer } from './components/on/Apostrophes';
 
@@ -18,6 +19,7 @@ const Layout = () => {
                     <Route path="/qr-code/scan" element={<QrCodeScanner />} />
                     <Route path="/qr-code/scanHistory" element={<ScanHistory />} />
                     <Route path="/qr-code/generateHistory" element={<GenerateHistory />} />
+                    <Route path="/qr-code/videos" element={<VideoPlayer />} />
                 </Routes>
             </main>
             <Footer />
